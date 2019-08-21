@@ -79,6 +79,9 @@ namespace RestaurantManager.Views
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            //frm_Alert alert = new frm_Alert();
+
+            frm_Alert.Alert("Như Thương",frm_Alert.AlertType.success);
         }
 
         private void cbxShowPass_OnChange(object sender, EventArgs e)
@@ -92,6 +95,19 @@ namespace RestaurantManager.Views
             {
                 txtPassword.UseSystemPasswordChar = true;
                 bunifuCustomLabel3.ForeColor = Color.White;
+            }
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
             }
         }
     }

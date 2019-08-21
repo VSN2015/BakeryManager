@@ -75,5 +75,20 @@ namespace RestaurantManager.Views
             panel3.BackColor = Color.White;
             txtNhapLaiPass.ForeColor = Color.White;
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            frm_DangNhap frm_DN = new frm_DangNhap();
+            frm_DN.Show();
+            this.Close();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+        }
     }
 }
